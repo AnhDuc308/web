@@ -1,0 +1,751 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container,
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+body{
+    overflow:hidden;
+    overflow-y: auto;
+}
+.header-banner{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0px;
+}
+.banner{
+    width: 100%;
+    height: auto;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+}
+.header-logo {
+    width: auto;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%);
+  }
+.header-nav{
+    width: 597px;
+    height: 39px;
+    position: absolute;
+    top: 101px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+}
+.header-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 38.73px;
+    margin-right: 40px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+.header-nav a:hover {
+    color:#ff5e14;
+    transform: scale(1.2);
+}
+
+.header-nav a:last-child {
+    margin-right: 0;
+}
+.gach{
+    width: 28px;
+    height: 28px;
+    display: none;
+    position:absolute;
+    top: 0px;
+    left: 8px;
+  
+}
+.header-nav-mobile {
+    position:absolute;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    width: 300px;
+    max-width: 100%;
+    background-color: #ff5e14;
+    transform: translateX(-100%);
+    z-index: 1001;
+    
+}
+.ovl {
+    display: none;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom: -15px;
+    background-color: rgba(0,0,0,0.3);
+    animation: fadeIn linear 0.2s;
+    z-index: 1000;
+    transition: transform 0.5s ease;
+}
+
+.header-nav-mobile a:hover {
+    margin-left:15px;
+    color:#FFFFFF;
+    transform: scale(1.2);
+}
+.header-nav-mobile a { 
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    color:#000000;
+    padding-left: 16px;
+    line-height: 40px;
+
+}
+.amobile {
+    padding-top: 30px;
+  }
+.close {
+    width: 28px;
+    height: 28px;
+}
+
+.input-class:checked ~ .header-nav-mobile{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translateX(0); 
+    transition: transform 0.5s ease;
+}
+.input-class:checked ~ .ovl {
+    display: block;
+}
+
+.aboutus-img2 {
+    max-width: 513px;
+  }
+.aboutus-Home-Made {
+    background-color: #9CAB70;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+.aboutus-Home-Made h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 69.5px;
+    font-family: 'Kaisei Decol';
+    color: #FFFFFF;
+    padding-top: 41px;
+    padding:0px;
+}
+.aboutus-Home-Made h3 {
+    width: 662px;
+    height: 173px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46.34px;
+    font-family: 'Kaisei Decol';
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 27px;
+  }
+.aboutus{
+    display: flex;
+    margin-top: 36px;
+    padding-left: 0px;
+}
+.product{
+    width: 100%;
+    height: auto;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.product-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 54px;
+    box-sizing: border-box;
+  }
+.product-header {
+    width: 100%;
+    text-align: center;
+}
+.product-product1 {
+    width: 100%;
+    padding: 35px;
+
+}
+.product-product1 img {
+    transition: transform 0.3s ease;
+}
+.product-product1:hover img {
+    transform: scale(1.2);
+}
+.product-daubai {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 69.5px;
+    font-family: 'Kaisei Decol';
+    color: #000000;
+    margin-top: 58px;
+}
+.product-daubai h2 {
+    font-size: 3rem;
+    
+}
+.product-tieude1 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 34.68px;
+    font-family: 'Jost';
+    color: #000000;
+    margin-top: 13px;
+}
+.product-ndung1 {
+    font-size: 16px;
+    line-height: 23.17px;
+    text-align: center;
+    margin-top: 4px;
+}
+.product-ndung1 h3 {
+    font-family: Kaisei Decol;
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.Discount {
+    display: flex;
+}
+
+.Discount-giamgia {
+    background-color: #9CAB70;
+    margin-right: 25px;
+    margin-top: 42px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .Discount-giamgia h2 {
+    
+    font-family: 'Italiana';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 75.39px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 26px;
+  }
+.Discount-giamgia h3 {
+    width: 654px;
+    height: 103px;
+    font-family: 'Jost';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 46.24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 15px;
+    
+}
+.Discount-img7 {
+    max-width: 488px;
+    height: 355px;
+    margin-top: 41px;
+}
+
+.Discount-btn {
+    width: 227px;
+    height: 57px;
+    background-color:#FFFFFF;
+    font-size: 32px;
+    line-height: 46.24px;
+    color: #383F26;
+    cursor: pointer;
+    border: 2px solid #68763F;
+    border-radius: 20px;
+    margin-top: 34px;
+}
+.Discount-btn:hover {
+    background-color: #ff5e14;
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+.contact {
+
+    position: relative;
+}
+.contact-img8{
+    max-width: 1435px;
+    height: 598px;
+    margin-top: 37px;
+}
+.contact-dnhap {
+    width: 607px;
+    height: 597px;
+    background-color: #FAFAFA;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%);
+}
+.contact-dnhap h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 36px;
+    font-weight: 400;
+    line-height: 57.8px;
+    font-family: 'Jost';
+}
+
+.contact-dnhap2 {
+    width: 515px;
+    height: 56px;
+    padding-left: 20px;
+    padding-top: 6px;
+    border-radius: 15px;
+    border: 4px solid #9CAB70;
+    box-sizing: border-box;
+}
+
+.contact-dnhap2:first-child{
+    margin-top: 37px;
+}
+.contact-dnhap3 {
+    width: 515px;
+    height: 135px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: 4px solid #9CAB70;
+    margin-bottom: 51px;
+    box-sizing: border-box;
+    padding-bottom: 67px;
+    margin-top: 37px;
+}
+
+.contact-btn {
+    width: 153px;
+    height: 52px;
+    padding:0px 36px;
+    background-color:#68763F;
+    font-size: 28px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 4px solid #9CAB70;
+    border-radius: 15px;
+}
+.contact-btn:hover {
+    background-color: #ff5e14;
+    color: #FFFFFF;
+    transform: scale(1.1);
+    
+}
+.ctact-iput:hover {
+    transform: scale(1.05);
+}
+.ctact-mess:hover {
+    transform: scale(1.05);
+}
+.contact-dnhap2::placeholder {
+    font-size: 32px;
+}
+.contact-dnhap3::placeholder {
+    font-size: 32px;
+}
+.contact-button {
+    display: flex;
+    transform: translate(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+  }
+.dangnhap {
+    padding: 0px 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.footer-img {
+    text-align: center;
+    margin-top: 28px;
+  }
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.footer-nav a {
+    font-size: 32px;
+    line-height: 38.73px;
+    font-weight: 500;
+    font-family: 'Inter';
+    color: #9CAB70;
+    text-decoration: none;
+    margin-top:17px;
+    margin-bottom: 23px;
+}
+.footer-nav a:hover {
+    color: #ff5e14;
+    transform: scale(1.2);
+}
+.footer-logo {
+    height: 24px;
+    display:flex;
+    justify-content:center;
+    gap: 24px;
+    margin-top: 16px;
+}.footer-img{
+overflow: hidden;
+  }
+  .footer-img img {
+    transition: transform 0.3s ease;
+max-width: 200px;
+  }
+  .footer-img:hover img {
+    transform: scale(1.1);
+  }
+ 
+  .footer-logo svg { 
+    transition: transform 0.3s ease;
+max-width: 200px;
+  }
+  .lala:hover svg {
+    transform: translateY(-8px);
+  }
+
+  .lala {
+    width: 24px;
+  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .header-logo{
+        width: 7%;
+    }
+}
+    
+@media only screen and (max-width: 1200px) {
+    .header-logo{
+        width: 8%;
+    }
+    .product-main{
+        width: 100%;
+        padding-top: 75px;
+        flex-wrap: wrap;
+
+    }
+    .product-product1{
+        width: 30%;
+        padding: 50px;
+
+    }
+    .aboutus-Home-Made{
+        padding: 0px 15px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .aboutus {
+        margin-top: 20px;
+    }
+    .aboutus-img2 img {
+        max-width: 360px;
+        height: auto;
+    }
+    .aboutus-Home-Made h2 {
+        padding-top: 0px;
+    }
+    .product-daubai{
+        font-size: 32px;
+        margin-top: 35px;
+    }
+    .product-main {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product-product1{
+        width: 75%;
+        display: block;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding: 50px;
+    }
+    .Discount-img7{
+        margin-top: 20px;
+        height: 310px;
+    }
+    .Discount-img7 img {
+        max-width: 356px;
+    }
+    .Discount-giamgia {
+        margin-top: 20px;
+        margin-right: 15px;
+        height: 260px;
+        width: 100%;
+    }
+    .Discount-giamgia h2 {
+        font-size: 55px;
+        padding-top: 20px;
+    }
+    .Discount-giamgia h3 {
+        margin-bottom: 10px;
+        height: 0px;
+        font-size: 26px
+      
+    }
+    .Discount-btn {
+        font-size: 28px;
+        margin-top: 80px;
+    }
+    .contact-img8 img {
+        max-width: 1024px;
+        height: 430px;
+        margin-top: -70px;
+    }
+    .contact-dnhap {
+        top: -70px;
+        height: 423px;
+    }
+    .contact-dnhap2 {
+        margin: 0px;
+    }
+    .contact-dnhap2:first-child {
+        margin-top: 10px;
+      }
+      .contact-dnhap2 {
+        margin-bottom: 15px;
+        width: 450px;
+        height: 50px;
+      }
+      
+      .contact-dnhap3{
+        width: 450px;
+        height: 110px;
+        margin-top: 15px;
+      }
+      .contact-dnhap h2 {
+        margin-top: 5px;
+      }
+      .footer {
+        margin-top: -255px;
+        
+      }
+      
+}
+@media only screen and (max-width: 911px){
+    .aboutus {
+        margin-top: 20px;
+        flex-direction: column;
+      }
+    .aboutus-img2  {
+        display: none;
+      }
+    .aboutus-Home-Made h3 {
+        padding-bottom: 32px;
+    }
+    .product{
+        padding-bottom: 55px;
+    }
+    .Discount{
+        flex-direction: column-reverse;
+    }
+    .Discount-img7{
+        display: none;
+    }
+    .Discount-img7 img {
+        max-width: 485px;
+    }
+    .Discount-giamgia{
+        padding-bottom: 30px;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+    .contact-img8 img {
+        margin-top: -115px;
+    }
+    
+    .contact-dnhap {
+        top: -115px;
+    }
+    .contact-img8 {
+        transform: scale(0);
+      }
+    .gach {
+        display: block;
+    }
+    .header-nav {
+        display: none;
+    }
+    .header-nav-mobile {
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 767px){
+    .product-main {
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .product-product1{
+        width: 50%;
+        padding: 30px;
+        padding: 15px;
+
+    }
+    .contact-img8 {
+        transform: scale(0);
+      }
+    }
+@media only screen and (max-width: 576px){
+    .product-thananh {
+        display: flex;
+        justify-content: center;
+      }
+      .product-product1 {
+        width: 75%;
+        padding: 15px;
+      }
+      .contact-dnhap{
+        width: 100%;
+      }
+      .contact-dnhap2{
+        margin-left: 0px;
+      }
+      .contact-dnhap3{
+        margin-left: 0px;
+      }
+      .aboutus-Home-Made h3 {
+        width: auto;
+        height: auto;
+      }
+      .Discount-giamgia h3{
+        width: auto;
+        height: auto;
+        padding: 15px;
+      }
+      .Discount-btn{
+        
+        margin-top: 0px;
+      }
+}
+@media only screen and (max-width: 360px){
+    .header-logo{
+        width: auto;
+    }
+    .product-thananh {
+        display: flex;
+        justify-content: center;
+      }
+      .product-product1 {
+        width: 75%;
+        padding: 15px;
+      }
+      .contact-dnhap2{
+        width: 70%;
+      }
+      .contact-dnhap3{
+        width: 70%;
+      }
+      .ctact-mess {
+        text-align: center;
+      }
+      .ctact-iput {
+        text-align: center;
+      }
+      .contact-img8 {
+        transform: scale(0);
+      }
+      .froms {
+        width: 100%;
+      }
+      .footer-nav{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0px;
+        padding-left: 16px;
+    }
+    .footer-nav a {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 320px){
+    .header-logo{
+        width: auto;
+    }
+    .aboutus-Home-Made h3 {
+        height: auto;
+        width: auto;
+    }
+    .Discount-giamgia{
+        width: 100%;
+    }
+    .Discount-giamgia h3 {
+        height: auto;
+        width: auto;
+        padding: 0px 15px;
+    }
+    .Discount-btn{
+        margin: 15px;
+    }
+    .product-daubai {
+        padding: 0px 15px;
+        font-size: 30px;
+    }
+    .product-thananh {
+        display: flex;
+        justify-content: center;
+      }
+      .product-product1 {
+        width: 75%;
+        padding: 15px;
+      }
+      .contact-dnhap{
+        width: 100%;
+      }
+      .contact-dnhap2{
+        margin-left: 0px;
+      }
+      .contact-dnhap3{
+        margin-left: 0px;
+      }
+      .contact-img8 {
+        transform: scale(0);
+      }
+      
+    .footer-nav{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0px;
+        padding-left: 16px;
+    }
+    .footer-nav a {
+        width: 45%;
+    }
+    
+}
